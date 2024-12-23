@@ -1,0 +1,124 @@
+body {
+    font-family: 'Arial', sans-serif;
+    padding: 0;
+    background-color: #f4f4f4; /* Light gray background */
+    line-height: 1.6; /* Improves readability */
+}
+
+header {
+    background-color: #333; /* Dark header */
+    color: white;
+    padding: 1em;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold; /* Make links stand out */
+}
+
+nav ul li img {
+    max-width: 40px; /* Adjust image size as needed */
+    height: auto;
+}
+
+input[type="text"] {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+main {
+    padding: 2em;
+}
+
+.menu-section {
+    text-align: center;
+}
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menu-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 1em;
+    padding: 1em;
+    width: 300px;
+    box-sizing: border-box;
+    text-align: left;
+    transition: transform 0.3s; /* Add smooth transition for hover effect */
+}
+
+.menu-item:hover {
+    transform: translateY(-5px); /* Subtle lift on hover */
+}
+
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.5em;
+}
+
+
+h2, h3 {
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    width: 100%;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 766px) {
+    .menu-item {
+        width: calc(50% - 2em);
+    }
+
+  nav {
+        flex-direction: column; 
+        align-items: center;     
+    }
+    nav ul {
+        flex-direction: column; 
+    }
+    nav ul li {
+        margin: 0.5em 0;     
+    }
+ }
